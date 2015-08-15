@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #666;
+    /* border-bottom: solid 1px #aaa; */
+    /* padding-bottom: 0.5em; */
+}
+
+thead {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+td {
+    border: solid 1px #D6D6D6;
+}
+
+table {
+    border-spacing: 0;
+}
+
+
+h1 {
+    color: #5151AF;
+    border-bottom: solid 1px;
+    padding-bottom: 0.5rem;
+}
+
+.group.ng-scope {
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #aaa;
+}
+
+td.server-name {
+    font-weight: bold;
+    color: #5A7BAB;
+}
+
+td.Available {
+    background-color: #ADE9AD;
+}
+
+td.Using {
+    background-color: #EBDAA8;
+}
+
+.publish {
+    /* background-color: #43B843; */
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.publish.true {
+    background-color: #43B843;
+}
+
+.publish.false {
+    background-color: rgba(122, 93, 11, 0.21);
+}
+
+input[type="text"] {
+    font-size: 1rem;
+}
+
+tr.Using input[type="text"] {
+    border: none;
+}
+
+button {
+    font-size: 1rem;
+}

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Server Monitor</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="monitorApp" ng-controller="mainController">
+    <h1>Server Monitor</h1>
+    <div class="group" ng-repeat="g in groups">
+        <h2>{{g.GroupName}}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Server Name</td>
+                    <td>发布List</td>
+                    <td>Username</td>
+                    <td>Using End Time</td>
+                    <td>Status</td>
+                    <td>Operate</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="s in g.Servers" class="{{s.Status}}">
+                    <td class="server-name">{{s.ServerName}}</td>
+                    <td>
+                        <a href="{{pub.Link}}" ng-repeat="pub in s.Publishes" class="publish {{pub.Success}}">
+                        </a>
+                    </td>
+                    <td>
+                        <input type="text" ng-readonly="s.Status=='Using'" ng-model="s.Username" />
+                    </td>
+                    <td>
+                        <input type="time" placeholder="HH:mm:ss" ng-readonly="s.Status=='Using'" ng-model="s.UsingEndTime" />
+                    </td>
+                    <td class="{{s.Status}}">{{s.Status}}</td>
+                    <td>
+                        <button ng-click="ChangeStatus(s, g.GroupName)">{{s.Status=='Using'?'Release':'Use'}}</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

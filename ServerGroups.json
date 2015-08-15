@@ -1,0 +1,60 @@
+[
+	{
+		"GroupName": "Group 1",
+		"Servers": [
+			{
+				"ServerName": "SQL Server",
+				"Status": "Using",
+				"Username": "asd",
+				"UsingEndTime": "1969-12-31T18:03:00.000Z",
+				"Publishes": [],
+				"GroupName": ""
+			},
+			{
+				"ServerName": "Windows Server",
+				"Status": "Available",
+				"Username": "",
+				"UsingEndTime": "",
+				"Publishes": [],
+				"GroupName": ""
+			},
+			{
+				"ServerName": "Linux Server",
+				"Status": "Available",
+				"Username": "",
+				"UsingEndTime": "",
+				"Publishes": [],
+				"GroupName": ""
+			}
+		]
+	},
+	{
+		"GroupName": "Group 2",
+		"Servers": [
+			{
+				"ServerName": "SQL Server 2",
+				"Status": "Using",
+				"Username": "Huang",
+				"UsingEndTime": "",
+				"Publishes": [],
+				"GroupName": ""
+			},
+			{
+				"ServerName": "Windows Server 2",
+				"Status": "Available",
+				"Username": "",
+				"UsingEndTime": "",
+				"Publishes": [],
+				"GroupName": ""
+			},
+			{
+				"ServerName": "Linux Server 2",
+				"Status": "Using",
+				"Username": "Carl",
+				"UsingEndTime": "",
+				"Publishes": [],
+				"GroupName": ""
+			}
+		]
+	}
+]
