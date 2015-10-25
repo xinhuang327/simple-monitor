@@ -5,7 +5,7 @@ build:
     - go get
     - go build
     - git clone http://$$GITAUTH@home.noapp.net:3000/adrian/simple-monitor-deploy $GOPATH/src/home.noapp.net/adrian/simple-monitor-deploy
-    - cp $GOPATH/src/github.com/xinhuang327/simple-monitor/ $GOPATH/src/home.noapp.net/adrian/simple-monitor-deploy
+    - cp $GOPATH/src/github.com/xinhuang327/simple-monitor/* $GOPATH/src/home.noapp.net/adrian/simple-monitor-deploy
     - cd $GOPATH/src/home.noapp.net/adrian/simple-monitor-deploy
     - git add .
     - git commit -m "Another deploy release"
