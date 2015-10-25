@@ -1,5 +1,6 @@
-image: golang:1.5
-script:
- - go get github.com/xinhuang327/simple-monitor/...
- - cd $GOPATH/src/github.com/xinhuang327/simple-monitor/
- - go build
+build:
+  image: golang
+  commands:
+    - go get
+    - go build
+    - go test
