@@ -8,5 +8,7 @@ build:
     - cp -r $GOPATH/src/github.com/xinhuang327/simple-monitor/* $GOPATH/src/home.noapp.net/adrian/simple-monitor-deploy
     - cd $GOPATH/src/home.noapp.net/adrian/simple-monitor-deploy
     - git add .
+    - git config --global user.email "you@example.com"
+    - git config --global user.name "Your Name"
     - git commit -m "Another deploy release"
     - git push
