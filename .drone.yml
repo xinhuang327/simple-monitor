@@ -1,4 +1,5 @@
-image: goenv:
+image: golang:1.5
+env:
  - GITAUTH=$$GITAUTH
 script:
  - go get github.com/xinhuang327/simple-monitor/...
